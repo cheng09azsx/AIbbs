@@ -17,8 +17,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/easybbs-web/src/main/resources/logback-spring.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
@@ -40,7 +45,12 @@
     "HTTP 请求.generated-requests | #1.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.EasybbsAdminApplication.executor": "Run",
     "last_opened_file_path": "D:/cilizhaiDownload/easybbs-java/easybbs-admin/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -51,7 +61,9 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.EasybbsAdminApplication.executor": "Run",
+    "应用程序.EasybbsWebApplication.executor": "Run"
   }
 }]]></component>
   <component name="RebelAgentSelection">
@@ -63,12 +75,54 @@
       <recent name="D:\cilizhaiDownload\easybbs-java\easybbs-admin\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.EasybbsWebApplication">
+    <configuration name="EasybbsAdminApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="easybbs.EasybbsAdminApplication" />
+      <module name="easybbs-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easybbs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasybbsWebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.easybbs.EasybbsWebApplication" />
+      <module name="easybbs-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.easybbs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="运行单个请求">
       <method v="2" />
     </configuration>
+    <configuration name="EasybbsAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="easybbs-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="easybbs.EasybbsAdminApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="easybbs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.EasybbsWebApplication" />
+        <item itemvalue="应用程序.EasybbsAdminApplication" />
+        <item itemvalue="Spring Boot.EasybbsAdminApplication" />
         <item itemvalue="HTTP 请求.generated-requests | #1" />
       </list>
     </recent_temporary>
@@ -91,6 +145,8 @@
       <workItem from="1748448405554" duration="1021000" />
       <workItem from="1748449435310" duration="3144000" />
       <workItem from="1748452594451" duration="2778000" />
+      <workItem from="1748517972261" duration="2911000" />
+      <workItem from="1748525732632" duration="10660000" />
     </task>
     <servers />
   </component>

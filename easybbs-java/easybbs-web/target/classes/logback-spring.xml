@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 minutes">
+    <appender name="stdot" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} [%p][%c][%M][%L]-> %m%n</pattern>
+        </layout>
+    </appender>
+
+    <springProperty name="context" source="log.path" defaultValue="project.folder"/>
+    <springProperty name="context" source="log.root.level" defaultValue="log.root.level"/>
+
+    <property name="LOG_FOLDER" value="logs"/>
+    <property name="LOG_FILE_NAME" value="easybbs-web.log"/>
+
+    <!-- 文件日志输出到文件 -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.filePath}/${LOG_FILE_NAME}/${LOG_FILE_NAME}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.filePath}/${LOG_FOLDER}/${LOG_FILE_NAME}.%d{yyyyMMdd}.%i</fileNamePattern>
+            <cleanHistory>true</cleanHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>20MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,GMT+8} [%p][%c][%M][%L]-> %m%n</pattern>
+        </encoder>
+        <append>false</append>
+        <prudent>false</prudent>
+    </appender>
+
+    <!-- 根日志配置 -->
+    <root level="${log.root.level}">
+        <appender-ref ref="stdot" />
+        <appender-ref ref="file" />
+    </root>
+</configuration>
